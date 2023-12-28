@@ -1,0 +1,69 @@
+.drum-pad {
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: var(--black);
+  color: var(--white);
+  margin-bottom: 10px;
+  box-shadow: var(--black) 3px 3px 5px;
+  flex-grow: 1;
+}
+
+.drum-pad:nth-child(1) {
+  border: 2px solid var(--red);
+  box-shadow: 0 0 10px var(--red);
+}
+
+.drum-pad:nth-child(2) {
+  border: 2px solid var(--orange);
+  box-shadow: 0 0 10px var(--orange);
+}
+
+.drum-pad:nth-child(3) {
+  border: 2px solid var(--yellow);
+  box-shadow: 0 0 10px var(--yellow);
+}
+
+.drum-pad:nth-child(4) {
+  border: 2px solid var(--lime);
+  box-shadow: 0 0 10px var(--lime);
+}
+
+.drum-pad:nth-child(5) {
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 10px var(--blue);
+}
+
+.drum-pad:nth-child(6) {
+  border: 2px solid var(--indigo);
+  box-shadow: 0 0 10px var(--indigo);
+}
+
+.drum-pad:nth-child(7) {
+  border: 2px solid var(--violet);
+  box-shadow: 0 0 10px var(--violet);
+}
+
+.drum-pad:nth-child(8) {
+  border: 2px solid var(--pink);
+  box-shadow: 0 0 10px var(--pink);
+}
+
+.drum-pad:nth-child(9) {
+  border: 2px solid var(--brown);
+  box-shadow: 0 0 10px var(--brown);
+}
+
+.drum-pad span {
+  pointer-events: none;
+}
+
+span,
+p {
+  user-select: none;
+  font-weight: bold;
+  border-radius: 5px;
+}

@@ -1,0 +1,23 @@
+input {
+  background: var(--lime);
+  box-shadow: 0 0 20px var(--lime);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 12.5px 0;
+  width: 220px;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--lime);
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 5px;
+  height: 30px;
+  background: var(--white);
+  box-shadow: 0 0 20px var(--indigo);
+  border-radius: 3px;
+}
