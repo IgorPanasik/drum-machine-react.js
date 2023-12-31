@@ -29,7 +29,6 @@ body {
 
 html,
 body {
-  height: 100%;
   overflow: hidden;
 }
 
@@ -57,6 +56,13 @@ body {
   box-sizing: border-box;
   background: var(--black);
   animation: shadow-pulse 1.5s infinite;
+}
+
+.drum-pad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
 }
 
 .pad-bank {
@@ -132,7 +138,7 @@ p {
 
 @media screen and (max-width: 690px) {
   .container-inner {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
     flex-direction: column-reverse;
   }
@@ -140,22 +146,33 @@ p {
   .pad-bank {
     margin: 0;
   }
+
+  .drum-pad {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .container-inner {
-    max-width: 330px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .container-inner {
-    max-width: 280px;
+    max-width: 250px;
     width: 100%;
   }
 
   .pad-bank {
-    width: 250px;
+    width: 100%;
+  }
+
+  .drum-pad {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    margin-bottom: 10px;
   }
 }
